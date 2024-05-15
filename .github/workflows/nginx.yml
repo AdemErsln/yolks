@@ -10,7 +10,7 @@ on:
       - files/**
 jobs:
   push:
-    name: "yolks:python_${{ matrix.tag }}"
+    name: "yolks:nginx:${{ matrix.tag }}"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
