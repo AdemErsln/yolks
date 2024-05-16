@@ -44,6 +44,7 @@ ENV USER container
 ENV HOME /home/container
 
 WORKDIR /home/container
-COPY ../files/entrypoint.sh /entrypoint.sh
+COPY ../entrypoint.sh /entrypoint.sh
+
 
 CMD ["/bin/ash", "/entrypoint.sh"]
